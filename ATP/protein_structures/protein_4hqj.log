@@ -1,0 +1,36 @@
+2025-07-01 18:06:19,127 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2025-07-01 18:06:19,127 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2025-07-01 18:06:19,127 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2025-07-01 18:06:19,127 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2025-07-01 18:06:19,129 INFO:main.py:763:main_driver:Loading topology files.
+2025-07-01 18:06:19,199 INFO:main.py:765:main_driver:Loading molecule: protein_structures/protein_4hqj.pdb
+2025-07-01 18:06:19,207 ERROR:pdb.py:2584:read_pdb:Error parsing line: invalid literal for int() with base 10: ''
+2025-07-01 18:06:19,207 ERROR:pdb.py:2585:read_pdb:<REMARK     2>
+2025-07-01 18:06:19,207 ERROR:pdb.py:2586:read_pdb:Truncating remaining errors for record type:REMARK
+2025-07-01 18:06:19,277 WARNING:io.py:467:get_molecule:Warning: protein_structures\protein_4hqj.pdb is a non-standard PDB file.
+
+2025-07-01 18:06:19,277 ERROR:io.py:468:get_molecule:['REMARK']
+2025-07-01 18:06:19,277 INFO:main.py:770:main_driver:Setting up molecule.
+2025-07-01 18:06:19,339 INFO:main.py:408:setup_molecule:Created biomolecule object with 2598 residues and 20359 atoms.
+2025-07-01 18:06:19,340 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2025-07-01 18:06:19,375 INFO:main.py:604:non_trivial:Loading forcefield.
+2025-07-01 18:06:19,395 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2025-07-01 18:06:19,414 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue SER E 47
+2025-07-01 18:06:19,414 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue SER G 47
+2025-07-01 18:06:19,421 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue SER E 47
+2025-07-01 18:06:19,421 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue SER G 47
+2025-07-01 18:06:19,421 INFO:main.py:618:non_trivial:Attempting to repair 2 missing atoms in biomolecule.
+2025-07-01 18:06:19,429 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue SER E 47
+2025-07-01 18:06:19,429 WARNING:biomolecule.py:157:num_missing_heavy:Missing atom OXT in residue SER G 47
+2025-07-01 18:06:19,433 INFO:biomolecule.py:1077:repair_heavy:Added atom OXT to residue SER E 47 at coordinates -11.562, 121.038, 39.943
+2025-07-01 18:06:19,434 INFO:biomolecule.py:1077:repair_heavy:Added atom OXT to residue SER G 47 at coordinates 21.888, 22.457, 54.062
+2025-07-01 18:06:19,434 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2025-07-01 18:06:19,444 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2025-07-01 18:06:19,801 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2025-07-01 18:06:21,264 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2025-07-01 18:06:22,968 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2025-07-01 18:06:28,562 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2025-07-01 18:06:28,592 INFO:main.py:713:non_trivial:Regenerating headers.
+2025-07-01 18:06:28,598 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2025-07-01 18:06:28,786 WARNING:main.py:311:print_pqr:Ignoring 392 header lines in output.
+2025-07-01 18:06:29,147 WARNING:main.py:354:print_pdb:Ignoring 392 header lines in output.
